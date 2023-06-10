@@ -1,0 +1,52 @@
+2023-06-10 21:44:23.873  INFO 17332 --- [main] c.u.s.s.googletest.Google1Test           : Starting Google1Test using Java 17.0.7 on NOMADLAB-01 with PID 17332 (C:\Users\Administrator\document\git\spring-selenium\target\test-classes started by Administrator in C:\Users\Administrator\document\git\spring-selenium)
+2023-06-10 21:44:23.874  INFO 17332 --- [main] c.u.s.s.googletest.Google1Test           : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 21:44:24.223  INFO 17332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 21:44:24.275  INFO 17332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2023-06-10 21:44:24.658  INFO 17332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-10 21:44:24.821  INFO 17332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-10 21:44:25.000  INFO 17332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 21:44:25.046  INFO 17332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-06-10 21:44:25.177  INFO 17332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-10 21:44:25.294  INFO 17332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-10 21:44:25.755  INFO 17332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 21:44:25.762  INFO 17332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 21:44:26.383  INFO 17332 --- [main] c.u.s.s.googletest.Google1Test           : Started Google1Test in 2.735 seconds (JVM running for 3.688)
+2023-06-10 21:44:26.635  INFO 17332 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-06-10 21:44:26.646  INFO 17332 --- [main] i.g.bonigarcia.wdm.WebDriverManager      : Exporting webdriver.chrome.driver as C:\Users\Administrator\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-06-10 21:44:27.667  INFO 17332 --- [Forwarding newSession on session null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected upstream dialect: W3C
+2023-06-10 21:44:27.701  WARN 17332 --- [AsyncHttpClient-1-4] o.openqa.selenium.remote.http.WebSocket  : Invalid Status code=403 text=Forbidden
+
+java.io.IOException: Invalid Status code=403 text=Forbidden
+	at org.asynchttpclient.netty.handler.WebSocketHandler.abort(WebSocketHandler.java:92) ~[async-http-client-2.12.3.jar:na]
+	at org.asynchttpclient.netty.handler.WebSocketHandler.handleRead(WebSocketHandler.java:118) ~[async-http-client-2.12.3.jar:na]
+	at org.asynchttpclient.netty.handler.AsyncHttpClientHandler.channelRead(AsyncHttpClientHandler.java:78) ~[async-http-client-2.12.3.jar:na]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327) ~[netty-codec-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:314) ~[netty-codec-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:435) ~[netty-codec-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279) ~[netty-codec-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.78.Final.jar:4.1.78.Final]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-10 21:44:27.718  INFO 17332 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 21:44:27.719  INFO 17332 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 21:44:27.722  INFO 17332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-10 21:44:27.723  INFO 17332 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
