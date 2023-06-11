@@ -1,6 +1,7 @@
 package kr.co.nomadlab.springseleniumstudy.page.google.component;
 
 import kr.co.nomadlab.springseleniumstudy.page.Base;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.springframework.stereotype.Component;
@@ -18,7 +19,7 @@ public class SearchComponent extends Base {
 
     public void search(final String keyword){
         this.searchBox.sendKeys(keyword);
-        this.searchBox.click();
+        this.searchBox.sendKeys(Keys.TAB);
         this.searchButtons
                 .stream()
                 .filter(e -> e.isDisplayed() && e.isEnabled())
