@@ -1,19 +1,20 @@
 package kr.co.nomadlab.springseleniumstudy.page.google;
 
+import kr.co.nomadlab.springseleniumstudy.annotation.Page;
 import kr.co.nomadlab.springseleniumstudy.page.Base;
 import kr.co.nomadlab.springseleniumstudy.page.google.component.SearchComponent;
+import kr.co.nomadlab.springseleniumstudy.page.google.component.SearchResultComponent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
+@Page
 public class GooglePage extends Base {
 
     @Autowired
     private SearchComponent searchComponent;
 
     @Autowired
-    private SearchResult searchResult;
+    private SearchResultComponent searchResultComponent;
 
     @Value("${application.url}")
     private String url;
@@ -26,8 +27,8 @@ public class GooglePage extends Base {
         return searchComponent;
     }
 
-    public SearchResult getSearchResult() {
-        return searchResult;
+    public SearchResultComponent getSearchResult() {
+        return searchResultComponent;
     }
 
     @Override
